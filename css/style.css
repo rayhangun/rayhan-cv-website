@@ -160,12 +160,11 @@ span {
 }
 
 aside {
-  width: 300px;
+  flex: 0 0 300px; 
   background-color: #f7f7f7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
-  float: right;
   padding: 1.4rem;
   margin-right: 2%;
   margin-top: 2%;
