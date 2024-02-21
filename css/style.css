@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid lightgrey;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2%;
+
+  z-index: 9999;
+}
+
+header.navbar-container .nav-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: teal;
+  color: white;
+}
+
+header.navbar-container .logo a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+header.navbar-container .logo a:hover {
+  color: teal;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content {
+  flex: 1;
+  padding: 1.4rem 2%;
+}
+
+main .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main .hero h1 {
+  color: black;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+main .hero h1 span {
+  color: teal;
+  font-weight: 700;
+  display: block;
+  font-size: xx-large;
+  line-height: 0.5rem;
+  margin-top: 1rem;
+}
+
+main .hero h2 {
+  color: gray;
+  font-weight: 500;
+}
+
+main .hero p {
+  font-weight: 400;
+  color: black;
+  margin-bottom: 2.5rem;
+}
+
+main .hero .hero-button {
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+main .hero .hero-button a {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  background-color: teal;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s ease-in;
+}
+
+main .hero .hero-button a:hover {
+  border: 3px solid teal;
+  background-color: transparent;
+  color: teal;
+}
+
+article {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: black;
+}
+
+article p {
+  color: silver;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+span {
+  color: #777;
+}
+
+aside {
+  width: 300px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  float: right;
+  padding: 1.4rem;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+aside img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-bottom: 1rem;
+}
+
+aside h2 {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+aside p {
+  text-align: justify;
+  color: #555;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.social-media ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-media li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.social-media a {
+  color: #555;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-media a:hover {
+  color: teal;
+}
+
+footer {
+  text-align: center;
+  margin: auto;
+}
+
+/* Tablet and smaller screens */
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column; /* Stack header items vertically for smaller screens */
+    align-items: center; /* Center items in the header for smaller screens */
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  header.navbar-container .nav-list li a {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  main {
+    flex-direction: column; /* Stack main and aside vertically */
+    align-items: center; /* Center content for smaller screens */
+  }
+
+  .content {
+    width: 100%; /* Take full width on smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  aside {
+    width: 100%; /* Take full width on smaller screens */
+    margin: 0; /* Remove margin for smaller screens */
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 480px) {
+  main .hero h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  main .hero h1 span {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  main .hero h2 {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  main .hero p {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  main .hero .hero-button a {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding: 0.6rem 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  article {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  aside img {
+    width: 80px; /* Adjust image size for smaller screens */
+    height: 80px; /* Adjust image size for smaller screens */
+  }
+
+  aside h2 {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  aside p {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .social-media a {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  footer {
+    font-size: 0.8rem; /* Adjust font size for the footer on smaller screens */
+  }
+}
